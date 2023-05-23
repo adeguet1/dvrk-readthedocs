@@ -18,11 +18,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'dVRK'
-copyright = '2012-2013, Johns Hopkins University (Baltimore, USA)'
+copyright = '2012-2023, Johns Hopkins University (Baltimore, USA)'
 author = 'Anton Deguet'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0.0'
+release = '2.3.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,6 +31,7 @@ release = '1.0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx_tabs.tabs'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
