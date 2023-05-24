@@ -19,7 +19,7 @@
 
 project = 'dVRK'
 copyright = '2012-2023, Johns Hopkins University (Baltimore, USA)'
-author = 'Anton Deguet'
+author = 'Anton Deguet, Peter Kazanzides'
 
 # The full version, including alpha/beta/rc tags
 release = '2.3.0'
