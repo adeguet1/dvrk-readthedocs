@@ -54,8 +54,10 @@ packages for the dVRK software:
          sudo apt install libxml2-dev libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion gfortran libcppunit-dev libqt5xmlpatterns5-dev libbluetooth-dev python3-wstool python3-catkin-tools python3-osrf-pycommon``
 
 .. warning::
-   for any dVRK software version greater than 2.1
+   For any dVRK software version greater than 2.1:
+   
    * Ubuntu 16.04 support has been dropped
+     
    * Ubuntu 18.04 support requires clang instead of gcc.  You will need to install clang with ``sudo apt install clang`` and configure your workspace using: ``catkin config --cmake-args -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++``
 
 Catkin workspace, clone and build
@@ -268,8 +270,9 @@ Example of session
 ^^^^^^^^^^^^^^^^^^
 
 * Terminal 1: starting the dVRK main console
-  
+
   * with a real system:
+
     .. code-block:: bash
 
        source ~/ros2_ws/install/setup.bash
@@ -277,6 +280,7 @@ Example of session
        ros2 run dvrk_robot dvrk_console_json -j share/jhu-dVRK-Si/console-PSM1.json
 
   * with a simulated arm:
+
     .. code-block:: bash
 
        source ~/ros2_ws/install/setup.bash
@@ -284,18 +288,21 @@ Example of session
        ros2 run dvrk_robot dvrk_console_json -j share/console/console-PSM1_KIN_SIMULATED.json
 
 * Terminal 2: using a Python test script to make the arm move
+
   .. code-block:: bash
 
      source ~/ros2_ws/install/setup.bash
      ros2 run dvrk_python dvrk_arm_test.py -a PSM1
 
 * Terminal 3: starting the ROS 2 joint and robot state publishers so we can visualize the arm in RViz
+
   .. code-block:: bash
 
      source ~/ros2_ws/install/setup.bash
      ros2 launch dvrk_model dvrk_state_publisher.launch.py arm:=PSM1
 
 * Terminal 4: starting RViz
+
   .. code-block:: bash
 
      source ~/ros2_ws/install/setup.bash
