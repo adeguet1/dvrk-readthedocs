@@ -51,7 +51,7 @@ packages for the dVRK software:
 
       .. code-block:: bash
 
-         sudo apt install libxml2-dev libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion gfortran libcppunit-dev libqt5xmlpatterns5-dev libbluetooth-dev python3-wstool python3-catkin-tools python3-osrf-pycommon``
+         sudo apt install libxml2-dev libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion gfortran libcppunit-dev libqt5xmlpatterns5-dev libbluetooth-dev python3-pyudev python3-wstool python3-catkin-tools python3-osrf-pycommon``
 
 .. warning::
    For any dVRK software version greater than 2.1:
@@ -153,7 +153,7 @@ For cisst/SAW and dVRK, you will also need the following Ubuntu packages:
 
       .. code-block:: bash
 
-         sudo apt install libxml2-dev libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion gfortran libcppunit-dev libqt5xmlpatterns5-dev libbluetooth-dev # dVRK
+         sudo apt install libxml2-dev libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion gfortran libcppunit-dev libqt5xmlpatterns5-dev libbluetooth-dev python3-pyudev # dVRK
          sudo apt install ros-galactic-joint-state-publisher* ros-galactic-xacro # ROS
 
    .. tab:: Ubuntu 22.04
@@ -162,7 +162,7 @@ For cisst/SAW and dVRK, you will also need the following Ubuntu packages:
 
       .. code-block:: bash
 
-         sudo apt install libxml2-dev libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion libcppunit-dev libqt5xmlpatterns5-dev libbluetooth-dev gfortran-9 # dVRK
+         sudo apt install libxml2-dev libraw1394-dev libncurses5-dev qtcreator swig sox espeak cmake-curses-gui cmake-qt-gui git subversion libcppunit-dev libqt5xmlpatterns5-dev libbluetooth-dev python3-pyudev gfortran-9 # dVRK
          sudo apt install ros-humble-joint-state-publisher* ros-humble-xacro # ROS
 
 Compile cisst/SAW components with ROS dependencies
